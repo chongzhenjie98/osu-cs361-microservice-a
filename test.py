@@ -9,7 +9,6 @@ request_1 = {
     'json_path': 'food_record.json',
     'output_format': 'ascii'
 }
-
 request_2 = {
     'duration': 30,
     'json_path': 'food_record.json',

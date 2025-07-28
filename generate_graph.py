@@ -5,6 +5,7 @@ from typing import Literal, Optional
 import plotext
 import matplotlib.pyplot as plt
 
+
 def generate_graph(
     duration: int, 
     json_path: str ='food_record.json', 
