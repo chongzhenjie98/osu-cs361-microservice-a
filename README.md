@@ -96,3 +96,7 @@ Example JSON response:
 ```
 
 ## UML sequence diagram
+
+This UML sequence diagram illustrates the ZeroMQ REQ–REP interaction: a client program connects over a ZeroMQ channel and sends a JSON request, while the microservice processes it and returns a JSON response (looping per request).
+
+<img width="3966" height="1681" alt="uml-diagram" src="https://github.com/user-attachments/assets/34407c58-f675-4ee2-8082-a7351655f157" />
