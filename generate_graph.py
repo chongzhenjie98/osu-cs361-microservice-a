@@ -48,12 +48,14 @@ def generate_graph(
     xlabel = 'Date'
     ylabel = 'Total daily calories'
     if output_format == 'ascii':
-        plotext.plot_size(100, 20)
+        plotext.clear_figure()
+        plotext.plot_size(120, 20)
         
         plotext.plot(list(graph_data.values()))
         plotext.xticks(ticks=list(range(1, duration + 1)), labels=list(graph_data))
         plotext.xlabel(xlabel)
         plotext.ylabel(ylabel)
+        plotext.yfrequency(5)
         plotext.title(title)
 
         return {
