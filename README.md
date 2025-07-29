@@ -51,11 +51,10 @@ import zmq
 from generate_graph import generate_graph
 
 
-port_num = 5555
 context = zmq.Context()
 socket = context.socket(zmq.REP)
-socket.bind(f'tcp://*:{port_num}')
-print(f'Listening on port {port_num}...')
+socket.bind('tcp://*:5555')
+print('Listening on port 5555...')
 
 while True:
     data = socket.recv_json()
